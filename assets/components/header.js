@@ -19,7 +19,7 @@ class MyHeader extends HTMLElement {
                              
                               <li class="menu-list-item nav-item active has-megamenu">
                                   <div class="mega-menu-header">
-                                      <a class="nav-link"  href="collection-left-sidebar.html">
+                                      <a class="nav-link"  href="#">
                                         Customize
                                       </a>
                                       <span class="open-submenu">
@@ -37,7 +37,7 @@ class MyHeader extends HTMLElement {
                                               
                                               <li class="menu-list-item nav-item-sub">
                                                   <div class="mega-menu-header d-flex align-items-center justify-content-between">
-                                                      <a class="mega-menu-img nav-link-sub nav-text-sub" href="#">
+                                                      <a class="mega-menu-img nav-link-sub nav-text-sub" href="customize-neon.html">
                                                           <img class="menu-img" src="assets/images/stories/8.jpg" alt="img">
                                                          
                                                           <div class="img-menu-action  text_12 bg-transparent p-0 mt-3">
