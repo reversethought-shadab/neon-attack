@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Clone</title>
+   
+    <link
+      href="https://fonts.googleapis.com/css?family=Yellowtail:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/customize.css" />
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/story.css">
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Aguafina+Script&family=Arizonia&family=Asset&family=Black+And+White+Picture&family=Bungee+Shade&family=Chakra+Petch:wght@300&family=Clicker+Script&family=Dawning+of+a+New+Day&family=Dr+Sugiyama&family=Freehand&family=Frijole&family=Great+Vibes&family=Handjet:wght@100&family=Handlee&family=Herr+Von+Muellerhoff&family=Italianno&family=Jim+Nightshade&family=Long+Cang&family=Love+Light&family=Lovers+Quarrel&family=Montserrat:wght@200;300;400;500;600;700&family=Pacifico&family=Rubik+Maps&family=Rye&family=Saira+Stencil+One&family=Style+Script&family=WindSong&family=Xanh+Mono&family=Zen+Tokyo+Zoo&display=swap');
+  </style>
+  <body>
+    <!-- custom cursor  -->
+    <div id="cursor" style="transform: translate(49px, 969px)"></div>
+    <div
+      id="cursor-border"
+      style="
+        transform: translate(49px, 969px);
+        background-color: unset;
+        --size: 30px;
+        mix-blend-mode: unset;
+      "
+    ></div>
+    <!-- top header  -->
+    <header>
+      <section class="w-100">
+        <div class="container-fluid w-100 gx-0">
+          <div class="announcement-bar">
+            <p class="announcement-message text-center">
+              🎆 New Year 2024 Sale! Flat 24% OFF at Checkout
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid topbar bg-dark d-none d-lg-block">
+        <div class="container px-0">
+          <div class="topbar-top d-flex justify-content-center flex-lg-wrap">
+            <div class="top-info flex-grow-0 break">
+              <span class="rounded-circle btn-sm-square me-2">
+                <img src="assets/images/svg/warr.svg" alt="" />
+              </span>
+              <div class="border-white d-flex align-items-center">
+                <p class="mb-0 text-white fs-6 fw-normal">2 Year Warranty</p>
+              </div>
+            </div>
+            <div class="top-info flex-grow-0 break">
+              <span class="rounded-circle btn-sm-square me-2">
+                <img src="assets/images/svg/happy.svg" alt="" />
+              </span>
+              <div class="border-white d-flex align-items-center">
+                <p class="mb-0 text-white fs-6 fw-normal">
+                  12000+ Happy Customers
+                </p>
+              </div>
+            </div>
+            <div class="top-info flex-grow-0 mx-3 break-2">
+              <span class="rounded-circle btn-sm-square me-2">
+                <img src="assets/images/svg/delivery.svg" alt="" />
+              </span>
+              <div class="border-white d-flex align-items-center">
+                <p class="mb-0 text-white fs-6 fw-normal">
+                  100% Timely Delivery
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <my-header></my-header>
+    </header>
+    <!-- <my-header></my-header> -->
+
+    <!-- breadcrumb ==== -->
+    <my-breadcrumb></my-breadcrumb>
+    <!-- story  -->
+    <my-story class="py-5"></my-story>
+  <!-- drawer cart start -->
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="drawer-cart">
+    <div class="offcanvas-header border-btm-black">
+        <h5 class="cart-drawer-heading text_16">Your Cart (04)</h5>
+        <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+        <img src="assets/images/icon/close.svg" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" alt="close btn">
+    </div>
+    <div class="offcanvas-body p-0">
+        <div class="cart-content-area d-flex justify-content-between flex-column">
+            <div class="minicart-loop custom-scrollbar">
+                <!-- minicart item -->
+                <div class="minicart-item d-flex">
+                    <div class="mini-img-wrapper">
+                        <img class="mini-img" src="assets/images/stories/1.jpg" alt="img">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="#">Item 1</a></h2>
+                        <p class="product-vendor">your choice</p>
+                        <div class="misc d-flex align-items-end justify-content-between">
+                            <div class="quantity d-flex align-items-center justify-content-between">
+                                <button class="qty-btn dec-qty"><img src="assets/images/icon/minus.svg"
+                                        alt="minus"></button>
+                                <input class="qty-input" type="number" name="qty" value="1" min="0">
+                                <button class="qty-btn inc-qty"><img src="assets/images/icon/plus.svg"
+                                        alt="plus"></button>
+                            </div>
+                            <div class="product-remove-area d-flex flex-column align-items-end">
+                                <div class="product-price">$580.00</div>
+                                <a href="#" class="product-remove">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- minicart item -->
+                <div class="minicart-item d-flex">
+                    <div class="mini-img-wrapper">
+                        <img class="mini-img" src="assets/images/stories/1.jpg" alt="img">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="#">Item 2</a></h2>
+                        <p class="product-vendor">Your Choice</p>
+                        <div class="misc d-flex align-items-end justify-content-between">
+                            <div class="quantity d-flex align-items-center justify-content-between">
+                                <button class="qty-btn dec-qty"><img src="assets/images/icon/minus.svg"
+                                        alt="minus"></button>
+                                <input class="qty-input" type="number" name="qty" value="1" min="0">
+                                <button class="qty-btn inc-qty"><img src="assets/images/icon/plus.svg"
+                                        alt="plus"></button>
+                            </div>
+                            <div class="product-remove-area d-flex flex-column align-items-end">
+                                <div class="product-price">$580.00</div>
+                                <a href="#" class="product-remove">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- minicart item -->
+                <div class="minicart-item d-flex">
+                    <div class="mini-img-wrapper">
+                        <img class="mini-img" src="assets/images/stories/1.jpg" alt="img">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="#">Item 3</a></h2>
+                        <p class="product-vendor">Your Choice</p>
+                        <div class="misc d-flex align-items-end justify-content-between">
+                            <div class="quantity d-flex align-items-center justify-content-between">
+                                <button class="qty-btn dec-qty"><img src="assets/images/icon/minus.svg"
+                                        alt="minus"></button>
+                                <input class="qty-input" type="number" name="qty" value="1" min="0">
+                                <button class="qty-btn inc-qty"><img src="assets/images/icon/plus.svg"
+                                        alt="plus"></button>
+                            </div>
+                            <div class="product-remove-area d-flex flex-column align-items-end">
+                                <div class="product-price">$580.00</div>
+                                <a href="#" class="product-remove">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- minicart item -->
+                <div class="minicart-item d-flex">
+                    <div class="mini-img-wrapper">
+                        <img class="mini-img" src="assets/images/stories/1.jpg" alt="img">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title"><a href="#">Item 4</a></h2>
+                        <p class="product-vendor">Your Choice</p>
+                        <div class="misc d-flex align-items-end justify-content-between">
+                            <div class="quantity d-flex align-items-center justify-content-between">
+                                <button class="qty-btn dec-qty"><img src="assets/images/icon/minus.svg"
+                                        alt="minus"></button>
+                                <input class="qty-input" type="number" name="qty" value="1" min="0">
+                                <button class="qty-btn inc-qty"><img src="assets/images/icon/plus.svg"
+                                        alt="plus"></button>
+                            </div>
+                            <div class="product-remove-area d-flex flex-column align-items-end">
+                                <div class="product-price">$580.00</div>
+                                <a href="#" class="product-remove">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="minicart-footer">
+                <div class="minicart-calc-area">
+                    <div class="minicart-calc d-flex align-items-center justify-content-between">
+                        <span class="cart-subtotal mb-0">Subtotal</span>
+                        <span class="cart-subprice">$1548.00</span>
+                    </div>
+                    <p class="cart-taxes text-center my-4">Taxes and shipping will be calculated at checkout.
+                    </p>
+                </div>
+                <div class="minicart-btn-area d-flex align-items-center justify-content-between">
+                    <a href="cart.html" class="minicart-btn btn-secondary">View Cart</a>
+                    <a href="checkout.html" class="minicart-btn btn-primary">Checkout</a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-empty-area text-center py-5 d-none">
+            <div class="cart-empty-icon pb-4">
+               <img src="assets/images/icon/empty-cart.svg" alt="">
+            </div>
+            <p class="cart-empty">You have no items in your cart</p>
+        </div>
+    </div>
+</div>
+<!-- drawer cart end -->
+ <!-- customize neon ===== -->
+ <!-- customize neon ===== -->
+ <section class="customize-neon">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="preview-full">
+            <h1 id="Preview-text" class="neonText">
+             See Here Preview
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="fontset">
+            <h1 class="dispay-1 mx-lg-5 text-white">Customise Neon</h1>
+            <div class="rating mx-lg-5">
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <i class="fa fa-star text-warning"></i>
+              <span class="text-white">88 Review</span>
+            </div>
+            <div class="price mt-3 mx-lg-5">
+              <h3 class="text-white price-value">₹00</h3>
+            </div>
+            <div class="forlabel mb-3">
+              <label class="indexlabel mx-lg-5">Type Your Text</label>
+            </div>
+            <textarea
+              required=""
+              type="text"
+              class="mx-lg-5 textarea-neon"
+              data-pplr_price="400"
+              data-pplr_price-type="4"
+              data-color="#ffffff"
+              data-main="1"
+              data-frame="1"
+              oninput="LoadPplrWithFont('1',true,this);"
+              onkeyup="LoadPplrWithFont('1',true,this,event);"
+              style="text-transform: inherit;"
+              d-placeholder="Text Preview"
+              placeholder="Text Preview"
+              name="properties[Regular]"
+              data-maxlength="300"
+              maxline="3"
+            ></textarea>
+          </div>
+
+          <div class="h-divider mx-lg-5 mx-sm-0">
+            <div class="shadow"></div>
+            <div class="text2">
+              <img
+                src="assets/images/22-223075_neon-rose-popsocket-hd-png-download-removebg-preview.png"
+              />
+            </div>
+          </div>
+          <p class="mx-5 text-white">Pick Your Font</p>
+          <div class="pplr-selecter-options mx-lg-5 mx-sm-0"><span class="pplr-selecter-item  passionate pplr_brittanysignature" style="font-family: 'Brittany Signature', sans-serif;"  >Passionate</span><span class="pplr-selecter-item dream pplr_dream-angel dream" style="font-family: 'Arizonia', cursive;" >Dreamy</span><span class="pplr-selecter-item flowy pplr_freeflow" style="font-family: 'Asset', serif;" >Flowy</span><span class="pplr-selecter-item  pplr_neoneon original" style=" font-family: 'Bungee Shade', sans-serif;"> Original </span><span class="pplr-selecter-item  pplr_maya-sans classic" style="font-family: 'Dr Sugiyama', cursive;" >Classic</span><span class="pplr-selecter-item  pplr_handestonie boujee" style="font-family: 'Freehand', cursive;">Boujee</span><span class="pplr-selecter-item  pplr_funky-signature funky" style="font-family: 'Handlee', cursive;">Funky</span><span class="pplr-selecter-item  pplr_amandavinola chic" style="font-family: 'Long Cang', cursive;" >Chic</span><span class="pplr-selecter-item  pplr_butterland delight" style="font-family: 'WindSong', cursive;" >Delight</span><span class="pplr-selecter-item  pplr_bastogne classy" style="font-family: 'Zen Tokyo Zoo', system-ui" >Classy</span><span class="pplr-selecter-item  pplr_sebastrian-script romantic" style="font-family: 'Xanh Mono', monospace;" >Romantic</span><span class="pplr-selecter-item  pplr_barques-regular robo" style="font-family: 'Afacad', sans-serif;">Robo</span><span class="pplr-selecter-item  pplr_foundry-font-pack charming" style="font-family: 'Aguafina Script', cursive;" >Charming</span><span class="pplr-selecter-item  pplr_cosmodrome-monoline quirky" style="font-family: 'Arizonia', cursive;" >Quirky</span><span class="pplr-selecter-item  pplr_geraldyne stylish" style="font-family: 'Black And White Picture', system-ui;" >Stylish</span><span class="pplr-selecter-item  pplr_rocket-clouds sassy" style="font-family: 'Clicker Script', cursive;">Sassy</span><span class="pplr-selecter-item  pplr_golden-hopes glam" style="font-family: 'Dawning of a New Day', cursive;">Glam</span><span class="pplr-selecter-item  pplr_lovelo-linebold dope" style="font-family: 'Handjet', sans-serif;" >DOPE</span><span class="pplr-selecter-item  pplr_chemistry chemisty" style="font-family: 'Handlee', cursive;" >Chemistry</span><span class="pplr-selecter-item  pplr_acoustica acoustic" style="font-family: 'Herr Von Muellerhoff', cursive;">Acoustic</span><span class="pplr-selecter-item  pplr_callifornia sparky" style="font-family: 'Love Light', cursive;" >Sparky</span><span class="pplr-selecter-item  pplr_boarding-regular selected-font vibey" style="font-family: 'Lovers Quarrel', cursive;">Vibey</span><span class="pplr-selecter-item  pplr_harmonia lofi" style="font-family: 'Rubik Maps', system-ui;" >LoFi</span><span class="pplr-selecter-item  pplr_whitening bossy" style="font-family: 'Style Script', cursive;">Bossy</span><span class="pplr-selecter-item  pplr_zorate iconic" style="font-family: 'Chakra Petch', sans-serif;" >ICONIC</span><span class="pplr-selecter-item  pplr_melon jolly" style="font-family: 'Rye', serif;" >Jolly</span><span class="pplr-selecter-item  pplr_hexore modern" style="font-family: 'Frijole', system-ui;" >MODERN</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- newsletter subscribe modal start -->
+<div class="modal fade" tabindex="-1" id="modal-subscribe">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content newsletter-modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-4">
+                <form action="#" class="newletter-modal-form common-form mx-auto">
+                    <div class="section-header mb-3">
+                        <h4 class="newsletter-modal-heading heading_34 d-flex align-items-center justify-content-center">
+                            <svg class="newsletter-modal-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>                                    SUBSCRIBE & SAVE
+                        </h4>
+                        <hr>
+                        <p class="newsletter-modal-misc text_14 mt-4 text-center">Sign up & be the first to hear about exclusive offers, new arrivals & more.</p>
+                    </div>
+                    <div class="newsletter-input-box d-flex align-items-center">
+                        <input class="mt-2 px-3" type="email" placeholder="Email address">
+                        <button type="submit" class="btn-primary d-block mt-2 btn-signin">SUBSCRIBE</button>
+                    </div>
+                    <p class="newsletter-modal-misc text_14 mt-4 text-center pb-4">You can change your email preference any time by clicking "unsubscribe" in your email.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- newsletter subscribe modal end -->
+   
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/components/breadcrumb.js"></script>
+    <script src="assets/components/header.js"></script>
+    <script src="assets/components/story.js"></script>
+    <script src="assets/js/customize.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
